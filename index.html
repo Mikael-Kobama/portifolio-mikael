@@ -1,86 +1,499 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!--==================== UNICONS ====================-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <title>Harshitha's Portfolio</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Mikael Kobama</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> Portfolio
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+            <div class="nav__btns">
+
+                <!-- theme change button  -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+    <div class="home__container container grid">
+        <div class="home__content grid">
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/kobama-mikael/" target="_blank" class="home__social-icon">
+                    <i class="uil uil-linkedin-alt"></i>
+                </a>
+                <a href="https://github.com/Mikael-Kobama" target="_blank" class="home__social-icon">
+                    <i class="uil uil-github-alt"></i>
+                </a>
+                <a href="mailto:mikael.kobama@gmail.com" target="_blank" class="home__social-icon">
+                    <i class="uil uil-envelope"></i>
+                </a>
+                <a href="tel:+55-XX-XXXXX-XXXX" target="_blank" class="home__social-icon">
+                    <i class="uil uil-phone-alt"></i>
+                </a>
+            </div>
+            <div class="home__img">
+                <img class="home__blob-img" src="./assets/img/perfil1.jpg" alt="profile" />
+            </div>
+            <div class="home__data">
+                <h1 class="home__title">Olá, eu sou o Mikael</h1>
+                <h3 class="home__subtitle">Desenvolvedor Full Stack Júnior</h3>
+                <p class="home__discription">
+                    Transformando ideias em soluções web com foco em usabilidade, performance e integração de tecnologias modernas.
+                </p>
+                <a href="mailto:mikael.kobama@gmail.com" class="button button--flex">
+                    Fale comigo<i class="uil uil-message button__icon"></i>
+                </a>
+            </div>
+        </div>
+        <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+                <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                <span class="home__scroll-name">Role para baixo</span>
+                <i class="uil uil-arrow-down"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+        <!--==================== ABOUT ====================-->
+       <section class="about section" id="about">
+    <h2 class="section__title">Sobre Mim</h2>
+    <span class="section__subtitle">Minha introdução</span>
+    <div class="about__container container grid">
+        <img src="./assets/img/about.png" alt="about" class="about__img">
+        <div class="about__data">
+            <p class="about__description">
+                Desenvolvedor Full Stack em formação, com sólidos conhecimentos em JavaScript, TypeScript, React, Node.js e fundamentos de Data Science. Foco em criar soluções funcionais e acessíveis para o mundo real.
+            </p>
+            <div class="about__info">
+                <div>
+                    <span class="about__info-title">+1</span>
+                    <span class="about__info-name">Ano de <br> estudo prático</span>
+                </div>
+                <div>
+                    <span class="about__info-title">+12</span>
+                    <span class="about__info-name">Projetos <br> concluídos</span>
+                </div>
+                <div>
+                    <span class="about__info-title">+3</span>
+                    <span class="about__info-name">Produtos <br> demonstráveis</span>
+                </div>
+            </div>
+            <div class="about__buttons">
+                <a href="/assets/pdf/CV-Mikael-Kobama.pdf" download="" class="button button--flex">
+                    Baixar CV<i class="uil uil-download-alt button__icon"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My technical level</span>
+            <div class="skills__container container grid">
+                <!--==================== SKILLS 1 ====================-->
+                <div class="skills__content skills__open">
+                    <div class="skills__header">
+                        <i class="uil uil-brackets-curly skills__icon"></i>
+                        <div>
+                            <h1 class="skills__title">Top Skills</h1>
+                            <span class="skills__subtitle">Highly Experienced</span>
+                        </div>
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">HTML</h3>
+                                <span class="skills__number">90%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__html"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">CSS</h3>
+                                <span class="skills__number">80%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__css"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">JAVASCRIPT</h3>
+                                <span class="skills__number">80%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__js"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">REACT JS</h3>
+                                <span class="skills__number">85%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__react"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">TYPESCRIPT</h3>
+                                <span class="skills__number">75%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__spa"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">TAILWIND CSS</h3>
+                                <span class="skills__number">70%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__node"></span>
+                            </div>
+                        </div
+                    </div>
+                    </div>
+                </div>
+
+
+                <!--==================== SKILLS 2 ====================-->
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil-dashboard skills__icon"></i>
+                        <div>
+                            <h1 class="skills__title">Other Skills</h1>
+                            <span class="skills__subtitle">Experienced</span>
+                        </div>
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">NODE JS</h3>
+                                <span class="skills__number">65%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__bootstrap"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">SPRING BOOT</h3>
+                                <span class="skills__number">50%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__tailwind"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">PYTHON</h3>
+                                <span class="skills__number">40%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__jquery"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">AWS</h3>
+                                <span class="skills__number">70%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__lodash"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">POSTGRESQL</h3>
+                                <span class="skills__number">55%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__redux"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">MONGODB</h3>
+                                <span class="skills__number">60%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__jest"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--==================== SKILLS 3 ====================-->
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil-code-branch skills__icon"></i>
+                        <div>
+                            <h1 class="skills__title">Tools</h1>
+                            <span class="skills__subtitle">Fairly Experienced</span>
+                        </div>
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+                    <div class="skills__list grid">
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">SCRUM</h3>
+                                <span class="skills__number">90%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__git"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">JIRA</h3>
+                                <span class="skills__number">70%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage jira"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">GITHUB & GIT</h3>
+                                <span class="skills__number">70%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__github"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+    <h2 class="section__title">Portfolio</h2>
+    <span class="section__subtitle">Projetos mais recentes</span>
+
+    <div class="portfolio__container container swiper-container">
+        <div class="swiper-wrapper">
+            <!--==================== PORTFOLIO 1 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="./assets/img/portfolio1.png" alt="Smart Bus App" class="portfolio__img">
+                <div class="portfolio__data">
+                    <h3 class="portfolio__title">Smart Bus App</h3>
+                    <p class="portfolio__description">
+                        Aplicativo com planejamento de rotas inteligentes e alertas em tempo real sobre alagamentos e congestionamentos, utilizando IA e dados crowdsourcing.
+                    </p>
+                    <a href="https://github.com/Mikael-Kobama/smart-bus-app" target="_blank" class="button button--flex button--small portfolio__button">
+                        Código
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+            <!--==================== PORTFOLIO 2 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="./assets/img/portfolio2.png" alt="URL Shortener" class="portfolio__img">
+                <div class="portfolio__data">
+                    <h3 class="portfolio__title">Encurtador de URL</h3>
+                    <p class="portfolio__description">
+                        Projeto full-stack com backend em TypeScript + MongoDB (via Docker) e frontend exibindo o link encurtado dinamicamente.
+                    </p>
+                    <a href="https://github.com/Mikael-Kobama/url-shortener" target="_blank" class="button button--flex button--small portfolio__button">
+                        Código
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+            <!--==================== PORTFOLIO 3 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="./assets/img/portfolio3.png" alt="Landing Page Profissional" class="portfolio__img">
+                <div class="portfolio__data">
+                    <h3 class="portfolio__title">Landing Page Profissional</h3>
+                    <p class="portfolio__description">
+                        Landing Page com foco em UI moderna e responsiva baseada no projeto de Adrian Hajdin, com adaptação pessoal e profissional.
+                    </p>
+                    <a href="https://github.com/Mikael-Kobama/professional-landing-page" target="_blank" class="button button--flex button--small portfolio__button">
+                        Código
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+            <!--==================== PORTFOLIO 4 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="./assets/img/portfolio4.png" alt="Ferydra System" class="portfolio__img">
+                <div class="portfolio__data">
+                    <h3 class="portfolio__title">Ferydra System</h3>
+                    <p class="portfolio__description">
+                        Ferramenta para simular e equilibrar sistemas de buffs e talentos em jogos, feita em JavaScript com lógica customizada.
+                    </p>
+                    <a href="https://github.com/Mikael-Kobama/ferydra-system" target="_blank" class="button button--flex button--small portfolio__button">
+                        Código
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+        </div>
+        <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section">
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">My personal journey</span>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target="#education">
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Education
+                    </div>
+                    <div class="qualification__button button--flex" data-target="#work">
+                        <i class="uil uil-briefcase-alt qualification__icon"></i>
+                        Work
+                    </div>
+                </div>
+
+                <div class="qualification__sections">
+
+                    <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <!--==================== QUALIFICATION 1 ====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">B.Tech Computer Science & Engineering</h3>
+                                <span class="qualification__subtitle">Pondicherry Engineering College - India</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2012 - 2016
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        <!--==================== QUALIFICATION 2 ====================-->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Higher Secondary</h3>
+                                <span class="qualification__subtitle">AHSS - India</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2010- 2012
+                                </div>
+                            </div>
+
+
+                        </div>
+                       
+                    </div>
+                </div>
+
+
+               
+
+            </div>
+        </section>
+
+
         
-        
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="">
 
-        <title>Responsive Portfolio Website</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            
-        </header>
+    </main>
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                
-            </section>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <p class="footer__copy">&#169; Mikael. All right reserved</p>
+        </div>
+    </footer>
 
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                
-            </section>
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
 
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
+    <!--==================== SWIPER JS ====================-->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
 
-            </section>
+    <!--==================== MAIN JS ====================-->
+    <script src="./assets/js/main.js"></script>
+</body>
 
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
-
-            </section>
-
-            <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-                
-            </section>
-
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                
-            </section>
-
-            <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
-
-            </section>
-
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-                
-            </section>
-
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
-
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-         
-        </footer>
-        
-        <!--==================== SCROLL TOP ====================-->
-        
-
-        <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
-
-        <!--==================== MAIN JS ====================-->
-        <script src=""></script>
-    </body>
 </html>

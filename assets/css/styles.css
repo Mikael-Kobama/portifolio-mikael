@@ -686,25 +686,19 @@ img {
 }
 
 .qualification__rounder {
-  display: block; /* Garante que ocupe a largura necessária para ser posicionado */
+  display: inline-block;
   width: 13px;
   height: 13px;
   background-color: var(--first-color);
   border-radius: 50%;
-  z-index: 10; /* Garante que a bolinha fique acima da linha */
-  position: absolute; /* Posiciona a bolinha absolutamente */
-  left: 0; /* Alinha a bolinha à esquerda do contêiner */
 }
 
 .qualification__line {
-  position: absolute;
   display: block;
   width: 1px;
+  height: 100%;
   background-color: var(--first-color);
-  top: 20px; /* Ajuste conforme a necessidade para começar abaixo da bolinha */
-  bottom: 0; /* Estende a linha até a parte inferior do contêiner */
-  left: 6px; /* Centraliza a linha na bolinha (metade da largura da bolinha) */
-  z-index: 5; /* Garante que a linha fique abaixo da bolinha */
+  transform: translate(6px, -7px);
 }
 
 .qualification [data-content] {

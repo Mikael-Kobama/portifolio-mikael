@@ -664,15 +664,9 @@ img {
 }
 
 .qualification__data {
-  display: flex; /* Usar Flexbox */
-  align-items: center; /* Alinhar verticalmente os itens ao centro */
-  gap: 1.5rem; /* Usar gap para espaçamento em vez de grid-column-gap */
-  margin-bottom: 1.5rem; /* Adicionar um espaçamento entre os itens */
-  position: relative; /* Criar um contexto para posicionamento absoluto */
-}
-
-.qualification__data > div:first-child {
-  flex-grow: 1; /* Permitir que o texto ocupe o espaço restante */
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
 }
 
 .qualification__title {

@@ -118,7 +118,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
-  color: var(--text-color);
+  color: rgb(183, 174, 224);
 }
 
 h1,
@@ -524,11 +524,11 @@ img {
 }
 
 .skills__js {
-  width: 80%;
+  width: 82%;
 }
 
 .skills__react {
-  width: 85%;
+  width: 75%;
 }
 
 .skills__spa {
@@ -566,11 +566,65 @@ img {
 }
 
 .skills__jira {
-  width: 70%;
+  width: 60%;
 }
 
 .skills__github {
-  width: 80%;
+  width: 74%;
+}
+
+.skills__type {
+  width: 65%;
+}
+.skills__spring {
+  width: 53%;
+}
+.skills__python {
+  width: 48%;
+}
+
+.skills__aws {
+  width: 74%;
+}
+
+.skills__post {
+  width: 68%;
+}
+
+.skills__mongo {
+  width: 76%;
+}
+
+.skills__scrum {
+  width: 90%;
+}
+
+.skills__kanban {
+  width: 66%;
+}
+
+.skills__cicd {
+  width: 64%;
+}
+
+.skills__cowork {
+  width: 90%;
+}
+
+.skills__com {
+  width: 82%;
+}
+
+.skills__adap {
+  width: 94%;
+}
+
+.skills__pro {
+  width: 84%;
+}
+
+.skills__auto {
+  width: 92%;
 }
 
 .skills__close .skills__list {
@@ -996,6 +1050,37 @@ img {
 .footer__link,
 .footer__social {
   color: #fff;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  text-align: center; /* Alinha o texto ao centro */
+  row-gap: 1rem; /* Espaçamento entre os elementos */
+  margin-bottom: var(--mb-2); /* Espaçamento antes do copyright */
+}
+
+.footer__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-0-25);
+  color: #fff;
+}
+
+.footer__tagline {
+  font-size: var(
+    --normal-font-size
+  ); /* Tamanho de fonte para a frase de efeito */
+  color: var(--text-color-light); /* Cor de texto mais clara */
+  margin-bottom: var(--mb-0-75);
+}
+
+.footer__contact {
+  font-size: var(
+    --small-font-size
+  ); /* Tamanho de fonte para informações de contato */
+  color: var(--text-color-light); /* Cor de texto mais clara */
+  margin-bottom: var(--mb-0-5);
 }
 
 /*========== SCROLL UP ==========*/

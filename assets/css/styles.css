@@ -117,8 +117,8 @@ body {
   margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--body-color);
-  color: rgb(183, 174, 224);
+  background-color: rgb(183, 174, 224);
+  color: var(--text-color);
 }
 
 h1,

@@ -664,9 +664,15 @@ img {
 }
 
 .qualification__data {
-  display: grid;
-  grid-template-columns: 1fr max-content 1fr;
-  column-gap: 1.5rem;
+  display: flex; /* Usar Flexbox */
+  align-items: center; /* Alinhar verticalmente os itens ao centro */
+  gap: 1.5rem; /* Usar gap para espaçamento em vez de grid-column-gap */
+  margin-bottom: 1.5rem; /* Adicionar um espaçamento entre os itens */
+  position: relative; /* Criar um contexto para posicionamento absoluto */
+}
+
+.qualification__data > div:first-child {
+  flex-grow: 1; /* Permitir que o texto ocupe o espaço restante */
 }
 
 .qualification__title {
@@ -686,20 +692,25 @@ img {
 }
 
 .qualification__rounder {
-  display: inline-block;
+  display: block; /* Garante que ocupe a largura necessária para ser posicionado */
   width: 13px;
   height: 13px;
   background-color: var(--first-color);
   border-radius: 50%;
+  z-index: 10; /* Garante que a bolinha fique acima da linha */
+  position: absolute; /* Posiciona a bolinha absolutamente */
+  left: 0; /* Alinha a bolinha à esquerda do contêiner */
 }
 
 .qualification__line {
+  position: absolute;
   display: block;
   width: 1px;
-  height: 100%;
   background-color: var(--first-color);
-  transform: translate(6px, -7px);
-  position: fixed;
+  top: 20px; /* Ajuste conforme a necessidade para começar abaixo da bolinha */
+  bottom: 0; /* Estende a linha até a parte inferior do contêiner */
+  left: 6px; /* Centraliza a linha na bolinha (metade da largura da bolinha) */
+  z-index: 5; /* Garante que a linha fique abaixo da bolinha */
 }
 
 .qualification [data-content] {
